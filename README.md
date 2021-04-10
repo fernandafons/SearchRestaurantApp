@@ -1,7 +1,7 @@
 # SearchRestaurantApp
 
 This is an app where you can search for restaurants all around the world. I started developing it during the [Complete React Native + Hooks Course](https://www.udemy.com/course/the-complete-react-native-and-redux-course/), but I decided to go further by myself and develop other options and features that were not part of the course. It was interesting making an API connection in React. 
-----------------------------
+
 
 ## Getting Started
 
