@@ -15,7 +15,7 @@ const SearchScreen = () => {
     };
 
     return (
-        <View>
+        <View style={styles.background}>
         <SearchBar 
             term={term} 
             onTermChange={setTerm}
@@ -24,6 +24,7 @@ const SearchScreen = () => {
         {errorMessage ? <Text>{errorMessage}</Text> : null}
         <ScrollView>
         <ResultsList 
+            style={styles.container}
             results={filterResultsByPrice('$')} 
             title="Cost Effective"
         />
@@ -40,6 +41,14 @@ const SearchScreen = () => {
     );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    background: {
+        backgroundColor: "#EEEEEE"
+    },
+    container: {
+        backgroundColor: "#f1d8d8",
+        position: 'absolute'
+    }
+});
 
 export default SearchScreen;
