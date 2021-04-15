@@ -11,6 +11,7 @@ const ResultsList = ({ title, results, navigation }) => {
     return (
         <View style={styles.container} >
             <Text style={styles.title} >{title}</Text>
+            <View style={styles.line}></View>
             <FlatList 
                 // horizontal
                 // showsHorizontalScrollIndicator={false}
@@ -32,13 +33,17 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 18,
         fontWeight: 'bold',
-        marginLeft: 5,
-        marginRight: 5,
+        marginLeft: 30,
+        marginRight: 20,
         borderRadius: 10,
         marginBottom: 5,
-        color: "#252425",
-        backgroundColor: "#f4dede",
-        padding: 5
+        color: "#252425"
+    },
+    line: {
+        borderBottomColor: '#daae36',
+        borderBottomWidth: 4,
+        marginLeft: 20,
+        marginRight: 20,
     },
     container: {
         marginBottom: 10,
